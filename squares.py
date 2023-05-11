@@ -76,7 +76,7 @@ def clear_squares():
 name_label = tk.Label(root, text='Number: ', font=('calibre', 10, 'bold'), fg="green2", bg="black")
 name_entry = tk.Entry(root, textvariable=name_var, font=('calibre', 10, 'normal'), fg="green2", bg="black")
 sub_btn = tk.Button(root, text='Submit', command=get_squares, font=('ariel', 15, 'italic'))
-clr_btn = tk.Button(root, text='Clear', command=clear_squares, font=('ariel', 15, 'bold'))
+clr_btn = tk.Button(root, bg='grey', text='Clear', command=clear_squares, font=('ariel', 15, 'bold'), relief="groove")
 
 name_label.grid(row=0, column=0)
 name_entry.grid(row=0, column=1)
@@ -84,7 +84,7 @@ name_entry.grid(row=0, column=1)
 sub_btn.grid(row=2, column=1)
 clr_btn.grid(row=2, column=0)
 
-root.geometry("400x120")
+root.geometry("450x150")
 tk.Label(root, text="Please enter your number in the textbox and click Submit. \n\
 If you do not wish to continue, please enter \"end\" in the \n\
 text box and click Submit.", font=('Tunga', 9, 'bold'), fg="ivory4",
